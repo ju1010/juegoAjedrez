@@ -145,7 +145,7 @@ para poder hacer unas animaciones*/
 }
 /*termina linea de internet*/
 
-@keyframe shake-little {  /*posiblemente los px esten mal?*/
+@keyframes shake-little {  /*posiblemente los px esten mal?*/
   2% {
     transform: translate (1px, 0px) rotate (0.5deg);}
   4% {
@@ -249,3 +249,11 @@ para poder hacer unas animaciones*/
   0%, 100% {
     transform: translate(0, 0) rotate (0);}
 }
+
+.shake-little :hover,
+.shake-trigger:hover .shake-little, .shake-little.shake-freeze,
+.shake-little.shake-constant {
+  animation-name: shake-little;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
