@@ -666,7 +666,7 @@ let main = {
         // establezca la pieza seleccionada en '' nuevamente
         main.variables.selectedpiece = '';
 
-        $('#turn').html("It's Blacks Turn");
+        $('#turn').html("Turno de las negras!");
 
         $('#turn').addClass('turnhighlight');
         window.setTimeout(function(){
@@ -682,7 +682,7 @@ let main = {
         // establezca la pieza seleccionada en '' nuevamente
         main.variables.selectedpiece = '';
 
-        $('#turn').html("It's Whites Turn");
+        $('#turn').html("Turno de las blancas!");
 
         $('#turn').addClass('turnhighlight');
         window.setTimeout(function(){
